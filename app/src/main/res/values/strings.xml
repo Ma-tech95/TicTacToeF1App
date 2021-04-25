@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TicTacToe_F1</string>
+    <string name="score_board">Score Board</string>
+    <string name="player_1_0">Player 1: 0</string>
+    <string name="player_2_0">Player 2: 0</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="daniel_score">Daniel: 0</string>
+    <string name="kimi_score">Kimi: 0</string>
+</resources>

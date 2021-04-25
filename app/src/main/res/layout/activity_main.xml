@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/light_blue">
+
+
+    <TextView
+        android:id="@+id/danielTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_design"
+        android:text="@string/daniel_score"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/kimiTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_design"
+        android:text="@string/kimi_score"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/danielTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/backgrund_board"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kimiTextView">
+
+        <ImageButton
+            android:id="@+id/btn00"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn01"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintEnd_toStartOf="@+id/btn02"
+            app:layout_constraintStart_toEndOf="@+id/btn00"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn02"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn10"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintBottom_toTopOf="@+id/btn20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn00" />
+
+        <ImageButton
+            android:id="@+id/btn11"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintBottom_toTopOf="@+id/btn21"
+            app:layout_constraintEnd_toStartOf="@+id/btn12"
+            app:layout_constraintStart_toEndOf="@+id/btn10"
+            app:layout_constraintTop_toBottomOf="@+id/btn01" />
+
+        <ImageButton
+            android:id="@+id/btn12"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintBottom_toTopOf="@+id/btn22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn02" />
+
+        <ImageButton
+            android:id="@+id/btn20"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn21"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn22"
+            app:layout_constraintStart_toEndOf="@+id/btn20" />
+
+        <ImageButton
+            android:id="@+id/btn22"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/button_design"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/light_blue"
+        android:text="New game"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
